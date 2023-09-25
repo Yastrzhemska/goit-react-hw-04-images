@@ -42,6 +42,7 @@ export const App = () => {
     async function getImg() {
       try {
         const imagesArr = await fetchImages(query, page);
+        console.log(imagesArr);
         if (imagesArr.hits.length === 0) {
           setNotFound(true);
         }

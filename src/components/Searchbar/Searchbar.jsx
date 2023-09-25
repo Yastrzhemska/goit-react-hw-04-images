@@ -16,7 +16,7 @@ export const Searchbar = ({ onSubmit }) => {
   };
 
   const handleChange = evt => {
-    setQuery({ query: evt.target.value });
+    setQuery(evt.target.value);
   };
 
   return (
